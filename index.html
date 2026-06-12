@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Dev Toolkit</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>Developer Toolkit</h1>
+
+
+<div class="grid">
+
+
+<div class="tool">
+
+<h2>Password Generator</h2>
+
+<input id="password" readonly>
+
+<button onclick="generatePassword()">
+Generate
+</button>
+
+</div>
+
+
+
+
+<div class="tool">
+
+
+<h2>JSON Formatter</h2>
+
+
+<textarea id="json"
+placeholder="Paste JSON"></textarea>
+
+
+<button onclick="formatJSON()">
+Format
+</button>
+
+
+<pre id="output"></pre>
+
+
+</div>
+
+
+
+
+<div class="tool">
+
+
+<h2>UUID Generator</h2>
+
+
+<h3 id="uuid">
+Click Generate
+</h3>
+
+
+<button onclick="generateUUID()">
+Generate
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="tool">
+
+
+<h2>Timestamp Converter</h2>
+
+
+<input 
+id="timestamp"
+placeholder="Enter timestamp">
+
+
+<button onclick="convertTime()">
+Convert
+</button>
+
+
+<p id="timeResult"></p>
+
+
+</div>
+
+
+
+<div class="tool">
+
+
+<h2>Base64 Encoder</h2>
+
+
+<textarea id="text"
+placeholder="Enter text">
+</textarea>
+
+
+<button onclick="encode()">
+Encode
+</button>
+
+
+<p id="baseResult"></p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+
+</html>
